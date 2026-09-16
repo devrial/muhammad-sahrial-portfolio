@@ -1,0 +1,15 @@
+:root {
+  --navy: #07111f;
+  --navy-2: #0b1929;
+  --panel: #0d1b2d;
+  --panel-2: #102239;
+  --line: rgba(165, 192, 217, 0.15);
+  --line-strong: rgba(165, 192, 217, 0.26);
+  --text: #e7f0f6;
+  --muted: #8ea4b8;
+  --cyan: #63d8ee;
+  --blue: #4da8ff;
+  --orange: #f3a36b;
+  --max: 1180px;
+  --radius: 12px;
+}
