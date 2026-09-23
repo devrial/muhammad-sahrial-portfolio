@@ -71,8 +71,6 @@ export default function ProjectCard({ project }) {
                 rel="noopener noreferrer"
                 className="project-link"
               >
-                <i className="pi pi-github" />
-                GitHub
               </a>
             )}
           </div>
