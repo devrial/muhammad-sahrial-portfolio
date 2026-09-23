@@ -3,6 +3,8 @@ import { Divider } from "primereact/divider";
 import { Tag } from "primereact/tag";
 
 export default function ProjectCard({ project }) {
+  const links = project.links;
+
   return (
     <Card className={`project-card ${project.tone}`}>
       <div className="project-visual">
@@ -19,7 +21,18 @@ export default function ProjectCard({ project }) {
       <div className="project-body">
         <div className="project-title">
           <h3>{project.title}</h3>
-          <i className="pi pi-arrow-up-right" />
+          {links?.demo ? (
+            <a
+              href={links.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Open live demo of ${project.title}`}
+            >
+              <i className="pi pi-arrow-up-right" />
+            </a>
+          ) : (
+            <i className="pi pi-arrow-up-right" />
+          )}
         </div>
         <div className="project-detail">
           <span>Problem</span>
@@ -38,6 +51,32 @@ export default function ProjectCard({ project }) {
         <div className="project-result">
           <span>{project.result}</span>
         </div>
+        {links && (links.demo || links.github) && (
+          <div className="project-links">
+            {links.demo && (
+              <a
+                href={links.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                <i className="pi pi-arrow-up-right" />
+                Live Demo
+              </a>
+            )}
+            {links.github && (
+              <a
+                href={links.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                <i className="pi pi-github" />
+                GitHub
+              </a>
+            )}
+          </div>
+        )}
       </div>
     </Card>
   );

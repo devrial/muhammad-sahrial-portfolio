@@ -82,4 +82,30 @@ export const projects = [
 
     role: "Fullstack Developer",
   },
-];;
+
+  {
+    id: "dapur-nusa-landing-page",
+    number: "05",
+    type: "LANDING PAGE",
+    tone: "nusa",
+    title: "Dapur Nusa — Restaurant Landing Page",
+
+    problem:
+      "Dapur Nusa, a culinary business, did not yet have an online presence to introduce its brand, menu, and story to a wider audience.",
+
+    built:
+      "A responsive landing page showcasing the brand, menu highlights, and contact information — built from scratch as a learning project to practice modern React development and responsive design.",
+
+    stack: ["React", "Vite", "PrimeReact", "CSS"],
+
+    result:
+      "A fast, responsive landing page that is deployed and publicly accessible.",
+
+    role: "Frontend Developer",
+
+    links: {
+      demo: "https://landing-page-dapur-nusa.vercel.app/",
+      github: "https://github.com/devrial/landing-page-dapur-nusa",
+    },
+  },
+];

@@ -12,7 +12,8 @@ export default function Projects() {
         description={
           "A selection of web applications and digital systems " +
           "I've worked on across government, financial, and " +
-          "business workflows."
+          "business workflows, alongside personal projects I " +
+          "built to keep learning."
         }
       />
       <div className="projects-grid">

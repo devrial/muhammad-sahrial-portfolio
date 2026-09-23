@@ -494,6 +494,77 @@
   color: var(--cyan);
   font-size: 13px;
 }
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 12px;
+}
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--cyan);
+  font:
+    10px "DM Mono",
+    monospace;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.project-link:hover {
+  color: var(--text);
+}
+.project-link i {
+  font-size: 11px;
+  transition: transform 0.2s ease;
+}
+.project-link:hover i.pi-arrow-up-right {
+  transform: translate(2px, -2px);
+}
+.project-title a {
+  display: inline-flex;
+  color: var(--cyan);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.project-title a:hover {
+  color: var(--text);
+  transform: translate(2px, -2px);
+}
+.project-card.nusa.p-card {
+  background: #201509;
+  border-color: rgba(227, 211, 184, 0.16);
+}
+.project-card.nusa .project-visual {
+  background-color: #2b1d10;
+  background-image:
+    linear-gradient(rgba(227, 211, 184, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(227, 211, 184, 0.08) 1px, transparent 1px);
+}
+.project-card.nusa .project-visual:after {
+  border-color: rgba(245, 158, 11, 0.35);
+}
+.project-card.nusa .project-visual > span {
+  color: var(--amber);
+}
+.project-card.nusa .mini-graph i {
+  background: var(--amber);
+}
+.project-card.nusa .project-title a,
+.project-card.nusa .project-title a i {
+  color: var(--amber);
+}
+.project-card.nusa .project-detail > span {
+  color: var(--amber);
+}
+.project-card.nusa .p-tag {
+  background: rgba(245, 158, 11, 0.1);
+  color: #fcd34d;
+  border-color: rgba(245, 158, 11, 0.2);
+}
+.project-card.nusa .project-link {
+  color: var(--amber);
+}
 .experience-section {
   border-top: 1px solid var(--line);
 }
